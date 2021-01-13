@@ -4,10 +4,10 @@ import TextArea from './TextArea'
 import SelectSinglePullDown from './SelectSinglePullDown'
 import RadioButtons from './RadioButtons'
 import CheckboxGroup from './CheckboxGroup'
+//import PickADate from './PickADate'
+
 import PickADate from './PickADate'
-import ChakraInput from './ChakraInput'
-import PickADate from './PickADate'
-import SelectSinglePullDown from './SelectSinglePullDown'
+import SelectMultiPullDown from './SelectMultiPullDown'
 
 function FormikControl (props) {
   const { control, ...rest } = props
@@ -24,8 +24,6 @@ function FormikControl (props) {
       return <CheckboxGroup {...rest} />
     case 'date':
       return <PickADate {...rest} />
-    case 'chakraInput':
-      return <ChakraInput {...rest} />
     default:
       return null
   }
